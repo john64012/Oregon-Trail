@@ -28,6 +28,7 @@ class AmmoBox():
 
 class Compass():
     class Directions(enum.Enum):
+        
         W = "W"
         E = "E"
         N = "N"
@@ -37,7 +38,7 @@ class Compass():
         NE = "NE"
         SW = "SW"
         SE = "SE"
-        
+
     def __init__(self) -> None:
         self.direction_facing:Compass.Directions = Compass.Directions.W
 

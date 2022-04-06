@@ -1,7 +1,6 @@
 
 
 from __future__ import annotations
-import abc
 
 import random
 
@@ -11,6 +10,8 @@ class Person():
         self.weight = weight
         self.money = money
         self.strength = strength
+
+        self.fatigue = 0
 
     @classmethod
     def random(cls, weight_range:list[int], money_range:list[int],strength_range:list[int]):
